@@ -1,0 +1,23 @@
+.photosession {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 70px 1fr;
+    }
+    // &__content {
+        
+    // }
+    &__title {
+        max-width: 270px;
+
+    }
+
+    &__img {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }    
+}
+
+
+
+
