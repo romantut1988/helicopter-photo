@@ -1,0 +1,10 @@
+.products {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__list {
+        display: block;
+    }
+}

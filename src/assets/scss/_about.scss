@@ -1,0 +1,10 @@
+.about {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+    &__intro {
+       display: block;
+    }
+}

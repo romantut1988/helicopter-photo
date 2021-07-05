@@ -1,0 +1,15 @@
+.photos {
+    padding: 0 0 15px 0;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(8, 277px);
+        grid-template-rows: 185px;
+        gap: 15px;
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // gap: 11px;
+    }
+    .container {
+        padding: 0;
+    }
+}
