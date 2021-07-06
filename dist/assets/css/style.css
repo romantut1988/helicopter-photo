@@ -258,11 +258,12 @@ body {
     max-width: 190px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 28px;
     line-height: 34px;
     text-align: center;
-    color: #37373F;
+    color: #37373f;
+    margin: 40px 0 15px 0px;
 }
 
 .photosession__img {
@@ -270,17 +271,38 @@ body {
     height: 197px;
 }
 
-.photosession__rating {
-    padding: 50px 0 80px 0;
+.photosession__text {
+    margin: 50px 0 25px 0px;
+    color: #37373F;
+    font-size: 14px;
 }
 
-.photosession__text {
-    padding: 50px 0 25px 0px;
-    color: #37373F;
+.photosession__rating {
+    margin: 50px 0 40px 0;
+}
+
+.photosession__incsription {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.photosession__wrapper {
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .photos {
     padding: 0 0 15px 0;
+}
+
+.photos__title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #37373F;
+    width: 265px;
+    margin: 75px 0 30px 0;
 }
 
 .photos__grid {
@@ -288,6 +310,10 @@ body {
     grid-template-columns: repeat(8, 277px);
     grid-template-rows: 185px;
     gap: 15px;
+}
+
+.photos__btn {
+    display: none;
 }
 
 .photos .container {
@@ -299,10 +325,64 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .about__intro {
     display: block;
+}
+
+.about__organizer {
+    text-align: initial;
+    font-size: 16px;
+}
+
+.about__title {
+    font-size: 20px;
+    color: #37373F;
+    margin: 25px 0 15px 0;
+}
+
+.about__provide {
+    text-align: initial;
+}
+
+.about__btn {
+    font-size: 16px;
+    line-height: 25px;
+    color: #5286EC;
+    width: 125px;
+    height: 25px;
+    text-align: left;
+    border: 1px solid #5286EC;
+    margin: 20px 0 40px 0;
+}
+
+.photografer__img {
+    margin: 65px 0 25px 0;
+}
+
+.photografer__name {
+    font-size: 18px;
+    color: #37373F;
+    margin-bottom: 10px;
+}
+
+.photografer__btn {
+    font-size: 14px;
+}
+
+.photografer__proffession {
+    font-size: 14px;
+}
+
+.photografer__btn {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 11px;
+    color: #5286EC;
+    width: 290px;
+    height: 37px;
 }
 
 .products__wrapper {
@@ -310,10 +390,40 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    border: solid 1px red;
+}
+
+.products__title {
+    text-align: center;
+    font-size: 26px;
+    color: #37373F;
+    margin-bottom: 40px;
+    border: solid 1px green;
 }
 
 .products__list {
     display: block;
+}
+
+.products-list__day {
+    text-align: center;
+    border: solid 1px yellow;
+}
+
+.products-list__item {
+    padding-left: 10px;
+}
+
+.products-list__rating {
+    padding-left: 10px;
+}
+
+.feedback__img {
+    border-radius: 50%;
+    width: 84px;
+    height: 84px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .footer__wrapper {

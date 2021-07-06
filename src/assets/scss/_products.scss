@@ -2,9 +2,32 @@
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
+        border: solid 1px red;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 26px;
+        color: #37373F;
+        margin-bottom: 40px;
+        border: solid 1px green;
     }
 
     &__list {
         display: block;
+    }
+
+    &-list__day {
+        text-align: center;
+        border: solid 1px yellow;
+        
+    }
+
+    &-list__item {
+        padding-left: 10px;
+    }
+
+    &-list__rating {
+        padding-left: 10px;
     }
 }

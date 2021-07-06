@@ -2,9 +2,43 @@
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
+        text-align: center;
 }
 
     &__intro {
-       display: block;
+        display: block;
+    }
+
+    &__organizer {
+        text-align: initial;
+        font-size: 16px;
+       
+    }
+
+    &__title {
+        font-size: 20px;
+        color: #37373F;
+        margin: 25px 0 15px 0;
+    }
+
+    // &__text {
+    //     text-align: initial;
+    //     font-size: 14px;
+    // }
+
+    &__provide {
+        text-align: initial;
+        
+    }
+
+    &__btn {
+        font-size: 16px;
+        line-height: 25px;
+        color: #5286EC;
+        width: 125px;
+        height: 25px;
+        text-align: left;
+        border: 1px solid #5286EC;
+        margin: 20px 0 40px 0;
     }
 }
