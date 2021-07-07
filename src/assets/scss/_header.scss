@@ -30,16 +30,14 @@
         @media screen and (min-width: 576px) {
             margin-right: 36px;
         }
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) {
             height: 23px;
         }
     }
-
     &__logo {
         @media screen and (min-width: 768px) {
             width: 130px;
     }
-
     &__phone-city {
         @include text(14px, 400, 17px, $linkColor);
         @media screen and (min-width: 576px) {
@@ -56,14 +54,10 @@
         }
     }
     &__phone {
-        @include text(14px, 400, 17px, $textColor);
-        @media screen and (min-width: 576px) {
-            
-        }
+            @include text(14px, 400, 17px, $textColor);
     }
     &__user {
         @media screen and (min-width: 1280px) {
             display: none;
         }
     }
-}
