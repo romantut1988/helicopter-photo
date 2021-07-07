@@ -25,7 +25,7 @@
         display: flex;
         align-items: center;
     }
-    &__logo {
+    &__logo-link {
         margin-right: 45px;
         @media screen and (min-width: 576px) {
             margin-right: 36px;
@@ -34,14 +34,20 @@
             height: 23px;
         }
     }
-    &__city-link {
+
+    &__logo {
+        @media screen and (min-width: 768px) {
+            width: 130px;
+    }
+
+    &__phone-city {
         @include text(14px, 400, 17px, $linkColor);
         @media screen and (min-width: 576px) {
             display: none;
         }
     }
     &__phone {
-        display: none;
+        display: none; 
         span {
             @include text(14px, 400, 17px, $textColorLight);
         }
@@ -49,8 +55,11 @@
             display: block;
         }
     }
-    &__phone-link {
+    &__phone {
         @include text(14px, 400, 17px, $textColor);
+        @media screen and (min-width: 576px) {
+            
+        }
     }
     &__user {
         @media screen and (min-width: 1280px) {

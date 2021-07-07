@@ -70,23 +70,23 @@ body {
     align-items: center;
 }
 
-.header__logo {
+.header__logo-link {
     margin-right: 45px;
 }
 
 @media screen and (min-width: 576px) {
-    .header__logo {
+    .header__logo-link {
         margin-right: 36px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header__logo {
+    .header__logo-link {
         height: 23px;
     }
 }
 
-.header__city-link {
+.header__phone-city {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -94,16 +94,16 @@ body {
 }
 
 @media screen and (min-width: 576px) {
-    .header__city-link {
+    .header__phone-city {
         display: none;
     }
 }
 
-.header__phone {
+.header__phone-link {
     display: none;
 }
 
-.header__phone span {
+.header__phone-link span {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -111,12 +111,12 @@ body {
 }
 
 @media screen and (min-width: 576px) {
-    .header__phone {
+    .header__phone-link {
         display: block;
     }
 }
 
-.header__phone-link {
+.header__phone {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -287,6 +287,11 @@ body {
 }
 
 .photosession__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.rating__wrapper {
     display: -ms-flexbox;
     display: flex;
 }
