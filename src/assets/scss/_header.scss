@@ -12,6 +12,7 @@
     .container {
         @extend %container;
     }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -21,10 +22,13 @@
             height: 100px;
         }
     }
+    
+
     &__wrapper {
         display: flex;
         align-items: center;
     }
+
     &__logo-link {
         margin-right: 45px;
         @media screen and (min-width: 576px) {
@@ -34,16 +38,21 @@
             height: 23px;
         }
     }
+
     &__logo {
         @media screen and (min-width: 768px) {
             width: 130px;
+
+        }
     }
+
     &__phone-city {
         @include text(14px, 400, 17px, $linkColor);
         @media screen and (min-width: 576px) {
             display: none;
         }
     }
+
     &__phone {
         display: none; 
         span {
@@ -53,11 +62,14 @@
             display: block;
         }
     }
-    &__phone {
+
+    &__phone-link {
             @include text(14px, 400, 17px, $textColor);
     }
+
     &__user {
         @media screen and (min-width: 1280px) {
             display: none;
         }
     }
+}
