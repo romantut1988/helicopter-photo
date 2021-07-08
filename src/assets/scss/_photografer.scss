@@ -1,4 +1,10 @@
 .photografer {
+    &__photografer {
+        @media screen and (min-width: 1280px) {
+            display: block;
+        }
+    }
+
     &__img {
         margin: 65px 0 25px 0;
     }
@@ -10,11 +16,15 @@
     }
 
     &__btn {
+        border: 0;
         font-size: 14px;
     }
 
     &__proffession {
         font-size: 14px;
+        @media screen and (min-width: 576px) {
+            display: block;
+        }
     }
 
     &__btn {
