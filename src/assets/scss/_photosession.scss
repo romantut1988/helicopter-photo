@@ -1,9 +1,11 @@
 .photosession {
+
     &__grid {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
         padding-top: 40px;
+
         @media screen and (min-width: 1280px) {
             // grid-column: 2/3;
             // grid-row: 1/3;
@@ -15,12 +17,8 @@
     // }
 
     &__title {
-        max-width: 290px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 34px;
+        @include text(28px, 400, 34px, $textColor);
+        max-width: 190px;
         text-align: center;
         color: #37373f;
         margin: 40px 0 15px 0px;
@@ -29,11 +27,13 @@
             @include text(40px, 500, 48px, $textColor);
             margin: 50px 0 40px 0px;
         }
-        @include media(sm) {
+
+        @include media(md) {
             @include text(40px, 500, 48px, $textColor);
             margin: 50px 0 40px 0px;
         }
-        @include media(md) {
+        
+        @include media(lg) {
             display: contents;
         }
     }
@@ -50,10 +50,12 @@
             width: 506px;
             height: 340px;
         }
+
         @media screen and (min-width: 768px) {
             width: 668px;
             height: 437px;
         }
+
         @media screen and (min-width: 1280px) {
             width: 554px;
             height: 374px;
@@ -65,14 +67,17 @@
         margin: 50px 0 25px 0px;
         color: #37373F;
         font-size: 14px;
+        line-height: 20px;
 
         @media screen and (min-width: 576px) {
         font-size: 16px;
         }
+
         @media screen and (min-width: 768px) {
             font-size: 18px;
             margin: 50px 0 25px 0px;
             }
+
         @media screen and (min-width: 1280px) {
             font-size: 18px;
             margin:0 auto;
