@@ -18,10 +18,8 @@
 
     &__title {
         @include text(28px, 400, 34px, $textColor);
-        max-width: 190px;
-        text-align: center;
-        color: #37373f;
-        margin: 40px 0 15px 0px;
+            max-width: 190px;
+            margin: 0 auto;
 
         @include media(sm) {
             @include text(40px, 500, 48px, $textColor);
@@ -43,8 +41,8 @@
     //     }
 
     &__img {
-        width: 290px;
-        height: 197px;
+        width: 100%;
+        height: 100%;
 
         @media screen and (min-width: 576px) {
             width: 506px;
@@ -54,38 +52,64 @@
         @media screen and (min-width: 768px) {
             width: 668px;
             height: 437px;
+            margin-bottom: 30px;
         }
 
         @media screen and (min-width: 1280px) {
             width: 554px;
             height: 374px;
+            margin: 0 auto;
         }
     }
         
 
     &__text {
-        margin: 50px 0 25px 0px;
         color: #37373F;
         font-size: 14px;
+        max-width: 290px;
         line-height: 20px;
+        margin-top: 29px;
 
         @media screen and (min-width: 576px) {
         font-size: 16px;
+        max-width: 506px;
         }
 
         @media screen and (min-width: 768px) {
             font-size: 18px;
-            margin: 50px 0 25px 0px;
+            // margin: 50px 0 25px 0px;
+            max-width: 546px;
             }
 
         @media screen and (min-width: 1280px) {
             font-size: 18px;
-            margin:0 auto;
+            line-height: 26px;
+            // margin:0 auto;
         }
     }
 
-    &__rating {
-        margin: 50px 0 40px 0;
+    &__row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+    
+    &__incsription {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #37373F;
+        margin-left: 13px;
+    }
+
+    &__rating--photosession {
+        min-height: 70px;
+    margin-top: 40px;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     }
 
     &__incsription {
@@ -94,6 +118,21 @@
     }
 
     &__wrapper {
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+
+    &__text-wrapper{
         display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    &__stars--img {
+        margin-left: 8px;
     }
 } 

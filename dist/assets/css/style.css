@@ -268,25 +268,12 @@ body {
 }
 
 .photosession__title {
-    max-width: 290px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
     font-size: 28px;
+    font-weight: 400;
     line-height: 34px;
-    text-align: center;
-    color: #37373f;
-    margin: 40px 0 15px 0px;
-}
-
-@media (min-width: 768px) {
-    .photosession__title {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 48px;
-        color: #37373F;
-        margin: 50px 0 40px 0px;
-    }
+    color: #37373F;
+    max-width: 190px;
+    margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -301,13 +288,23 @@ body {
 
 @media (min-width: 1280px) {
     .photosession__title {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 48px;
+        color: #37373F;
+        margin: 50px 0 40px 0px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .photosession__title {
         display: contents;
     }
 }
 
 .photosession__img {
-    width: 290px;
-    height: 197px;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 576px) {
@@ -321,6 +318,7 @@ body {
     .photosession__img {
         width: 668px;
         height: 437px;
+        margin-bottom: 30px;
     }
 }
 
@@ -328,36 +326,62 @@ body {
     .photosession__img {
         width: 554px;
         height: 374px;
+        margin: 0 auto;
     }
 }
 
 .photosession__text {
-    margin: 50px 0 25px 0px;
     color: #37373F;
     font-size: 14px;
+    max-width: 290px;
+    line-height: 20px;
+    margin-top: 29px;
 }
 
 @media screen and (min-width: 576px) {
     .photosession__text {
         font-size: 16px;
+        max-width: 506px;
     }
 }
 
 @media screen and (min-width: 768px) {
     .photosession__text {
         font-size: 18px;
-        margin: 50px 0 25px 0px;
+        max-width: 546px;
     }
 }
 
 @media screen and (min-width: 1280px) {
     .photosession__text {
         font-size: 18px;
-        margin: 0 auto;
+        line-height: 26px;
     }
 }
 
+.photosession__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.photosession__incsription {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #37373F;
+    margin-left: 13px;
+}
+
 .photosession__rating {
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 69px;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    display: -webkit-box;
     margin: 50px 0 40px 0;
 }
 
@@ -369,6 +393,8 @@ body {
 .photosession__wrapper {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .rating__wrapper {
