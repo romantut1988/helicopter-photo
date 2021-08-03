@@ -8,8 +8,10 @@
     &__title {
         text-align: center;
         font-size: 26px;
-        color: #37373F;
+        line-height: 31px;
+        color: #37373f;
         margin-bottom: 40px;
+        font-weight: 400;
     }
 
     &__list {
@@ -45,6 +47,11 @@
         padding-left: 10px;
         border-bottom-style: groove;
         margin: 30px 20px 20px 20px;
+    }
+
+    &-list__item-inner {
+        display: flex;
+        flex-direction: column;
     }
 
     &-list__btn {
