@@ -1,6 +1,16 @@
-// .rating {
-//     &__wrapper {
-//         display: flex;
-//         margin: 55px 20px 30px 20px;
-//     }
-// }
+.rating {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text-wrapper {
+        margin-left: 18px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+    }
+}
