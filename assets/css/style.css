@@ -568,8 +568,10 @@ body {
 .products__title {
     text-align: center;
     font-size: 26px;
-    color: #37373F;
+    line-height: 31px;
+    color: #37373f;
     margin-bottom: 40px;
+    font-weight: 400;
 }
 
 .products__list {
@@ -611,6 +613,13 @@ body {
     padding-left: 10px;
     border-bottom-style: groove;
     margin: 30px 20px 20px 20px;
+}
+
+.products-list__item-inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .products-list__btn {
