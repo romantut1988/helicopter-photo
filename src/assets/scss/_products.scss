@@ -43,10 +43,15 @@
     &-list__item {
         padding-left: 10px;
         border-bottom: 1px solid;
-        display: flex;
+        display: block;
         justify-content: space-between;
         padding: 0 20px;
         align-items: center;
+
+        @media screen and (min-width: 576px) {
+            width: 506px;
+            display: flex;
+        }
     }
 
     &-list__item-inner {

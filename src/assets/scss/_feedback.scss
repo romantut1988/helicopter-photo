@@ -1,8 +1,71 @@
 .feedback {
+    &__title {
+        display: flex;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 39px;
+        justify-content: center;
+        color:#37373F;
+        ;
+    }
+
     &__img {
         border-radius: 50%;
-    width: 84px;
-    height: 84px;
-    object-fit: cover;
+        width: 84px;
+        height: 84px;
+        object-fit: cover;
+    }
+
+    &__item {
+        border-bottom: 1px solid #c7c7c7;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #37373F;
+    }
+
+    &__prof {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    &__again {
+        font-weight: 400;
+        font-size: 14px; 
+        line-height: 21px;
+        color: #B3B3B3;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #37373F;
+    }
+
+    &__time {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;        
+        color: #B3B3B3;
+    }
+
+    &__btn {        
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 25px;
+        color: #5286EC;
+        background: 0 0;
+        border: 0;
+        margin-top: 50px;
     }
 }
