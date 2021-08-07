@@ -729,6 +729,33 @@ body {
     color: #37373F;
 }
 
+.person-meet__img {
+    height: 65px;
+}
+
+.person-meet__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #37373F;
+}
+
+.person-meet__profession {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #37373F;
+}
+
+.person-meet__btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #5286EC;
+    background: 0 0;
+    border: 0;
+}
+
 .feedback__title {
     display: -ms-flexbox;
     display: flex;
@@ -801,6 +828,10 @@ body {
     background: 0 0;
     border: 0;
     margin-top: 50px;
+}
+
+.feedback__user-info {
+    margin-left: 20px;
 }
 
 .footer {

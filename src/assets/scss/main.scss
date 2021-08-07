@@ -16,6 +16,54 @@ body {
     min-width: 320px;
 }
 
+.swiper-container{
+    max-width: 400px;
+    width: 100%;
+    min-height: 200px;
+}
+.swiper-wrapper{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // height: 100%;
+    padding-top: 52px;
+
+}
+.swiper-slide{
+    // max-width: 400px;
+    // width: 100%;
+    // min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.swiper-button-next{
+    background-image: url(../images/arrow-swipper.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px;
+    height: 24px;
+}
+.swiper-button-prev{
+    background-image: url(../images/arrow-swipper.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+    width: 19px;
+    height: 24px;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.swiper-button-next::after, .swiper-container-rtl, .swiper-button-prev::after {
+    content: '';
+}
+.swiper-pagination-bullet{
+    background: #FC9B09;
+}
+
 @import "./header";
 @import "./main-block";
 @import "./photosession";
