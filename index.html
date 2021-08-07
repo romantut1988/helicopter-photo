@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-      <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Add the slick-theme.css if you want default styling -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Helicopter photo shoot</title>
@@ -166,7 +167,7 @@
                                     на обед/ужин.
                                     Более 50 фотографий на выходе
                                     с обработкой и замечательные впечатления о Дубае!</p>
-                                    
+
                                 <button class="about__btn">Читать еще</button>
                             </div>
                         </div>
@@ -215,19 +216,61 @@
         </section>
 
         <section class="map">
-                <div class="map__wrapper">
-                        <iframe src="https://yandex.by/map-widget/v1/-/CCUiNHAkWB" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
-                        </iframe>
-                </div>
+            <div class="map__wrapper">
+                <iframe src="https://yandex.by/map-widget/v1/-/CCUiNHAkWB" width="100%" height="400" frameborder="1"
+                    allowfullscreen="true" style="position:relative;">
+                </iframe>
+            </div>
 
-            <div class="container">
+
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="meet__circle">1</div>
+                        <div class="meet__text-wrap">
+                            <h4 class="meet__title">Где встречаемся?</h4>
+                            <div class="meet__subtitle">Москва</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="meet__circle">2</div>
+                        <div class="meet__text-wrap">
+                            <h4 class="meet__title">Время съемки</h4>
+                            <div class="meet__subtitle">3 часа</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="meet__circle">3</div>
+                        <div class="meet__text-wrap">
+                            <h4 class="meet__title">Мест осталось:</h4>
+                            <div class="meet__subtitle">2 места</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="meet__person person-meet">
+                <img class="person-meet__img" src="./assets/images/ellipse.png" alt="Marina" />
+                <div class="person-meet__inner">
+                    <h3 class="person-meet__title">Марина Иванова</h3>
+                    <span class="person-meet__profession">Фотограф</span>
+                    <button class="person-meet__btn">Показать больше информации о фотографе</button>
+                </div>
+            </div>
+
+
+            <!-- <div class="container">
                 <div class="map__meet meet">
                     <div class="meet__wrapper">
                         <div class="swiper swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="meet__circle">1</div>
-                                    <div class="meet__text-wrap">                        
+                                    <div class="meet__text-wrap">
                                         <h4 class="meet__title">Где встречаемся?</h4>
                                         <div class="meet__subtitle">Москва</div>
                                     </div>
@@ -239,7 +282,7 @@
                                         <div class="meet__subtitle">3 часа</div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide"> 
+                                <div class="swiper-slide">
                                     <div class="meet__circle">3</div>
                                     <div class="meet__text-wrap">
                                         <h4 class="meet__title">Мест осталось:</h4>
@@ -254,7 +297,7 @@
                         <div class="meet__info">
                             <div class="meet__info-item">
                                 <div class="meet__circle">1</div>
-                                <div class="meet__text-wrap">                        
+                                <div class="meet__text-wrap">
                                     <h4 class="meet__title">Где встречаемся?</h4>
                                     <div class="meet__subtitle">Москва</div>
                                 </div>
@@ -266,7 +309,7 @@
                                     <div class="meet__subtitle">3 часа</div>
                                 </div>
                             </div>
-                            <div class="meet__info-item"> 
+                            <div class="meet__info-item">
                                 <div class="meet__circle">3</div>
                                 <div class="meet__text-wrap">
                                     <h4 class="meet__title">Мест осталось:</h4>
@@ -282,61 +325,67 @@
                                 <button class="person-meet__btn">Показать больше информации о фотографе</button>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
-            </div>
-        </section>  
+            </div> -->
+        </section>
 
         <section class="feedback">
-        <div class="container">
-        <div class="feedback__wrapper">
-            <h2 class="feedback__title">Отзывы</h2>
-            <div class="feedback__item">
-                <div class="feedback__item">
-                    <div class="feedback__user">
-                        <img class="feedback__img" src="./assets/images/feedback-img-1.png" alt="feedback-1" />
-                        <div class="feedback__user-info">
-                            <div class="feedback__name">Валерия Антонова</div>
-                            <div class="feedback__prof">Арт-директор</div>
-                            <img class="feedback__stars" src="./assets/images/rating.png" alt="5 stars" >
+            <div class="container">
+                <div class="feedback__wrapper">
+                    <h2 class="feedback__title">Отзывы</h2>
+                    <div class="feedback__item">
+                        <div class="feedback__item">
+                            <div class="feedback__user">
+                                <img class="feedback__img" src="./assets/images/feedback-img-1.png" alt="feedback-1" />
+                                <div class="feedback__user-info">
+                                    <div class="feedback__name">Валерия Антонова</div>
+                                    <div class="feedback__prof">Арт-директор</div>
+                                    <img class="feedback__stars" src="./assets/images/rating.png" alt="5 stars">
+                                </div>
+                            </div>
+                            <span class="feedback__again">Супер! Я бы заказала съемку снова!</span>
+                            <p class="feedback__text">Хотим выразить огромную благодарность вашей компании! Получили
+                                море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное
+                                спасибо фотографу!</p>
+                            <time class="feedback__time" datetime="2019-04-27">27 Апреля, 2019г.</time>
                         </div>
-                    </div>
-                <span class="feedback__again">Супер! Я бы заказала съемку снова!</span>
-                <p class="feedback__text">Хотим выразить огромную благодарность вашей компании! Получили море ощущений, все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо фотографу!</p>
-                <time class="feedback__time" datetime="2019-04-27">27 Апреля, 2019г.</time>
-            </div>
-            <div class="feedback__item">
-                <div class="feedback__user">
-                    <img class="feedback__img" src="./assets/images/feedback-img-2.png" alt="feedback-2" />
-                    <div class="feedback__user-info">
-                        <div class="feedback__name">Виталий Петров</div>
-                        <div class="feedback__prof">Фотограф</div>
-                        <img class="feedback__stars" src="./assets/images/rating.png" alt="5 stars" >
+                        <div class="feedback__item">
+                            <div class="feedback__user">
+                                <img class="feedback__img" src="./assets/images/feedback-img-2.png" alt="feedback-2" />
+                                <div class="feedback__user-info">
+                                    <div class="feedback__name">Виталий Петров</div>
+                                    <div class="feedback__prof">Фотограф</div>
+                                    <img class="feedback__stars" src="./assets/images/rating.png" alt="5 stars">
+                                </div>
+                            </div>
+                            <span class="feedback__again">Супер! Я бы заказала съемку снова!</span>
+                            <p class="feedback__text">Восторг! :) Очень понравилось :) Захватили последний теплый,
+                                солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление.
+                                Организация полёта отличная. Спасибо!</p>
+                            <time class="feedback__time" datetime="2019-04-19">19 Апреля, 2019г.</time>
+                        </div>
+                        <div class="feedback__item hidden">
+                            <div class="feedback__user">
+                                <img class="feedback__img" src="./assets/images/feedback-img-3.jpg" alt="feedback-3" />
+                                <div class="feedback__user-info">
+                                    <div class="feedback__name">Джим Керри</div>
+                                    <div class="feedback__prof"></div>
+                                    <img class="feedback__stars" src="./assets/images/rating.png" alt="5 stars">
+                                </div>
+                            </div>
+                            <span class="feedback__again">Супер! Я бы заказала съемку снова!</span>
+                            <p class="feedback__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!!
+                                Кстати закуски были вкусными и сытными))Мы
+                                с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще
+                                нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним
+                                съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
+                            <time class="feedback__time" datetime="2019-04-11">11 Апреля, 2019г.</time>
+                        </div>
+                        <button class="feedback__btn">Показать Все (134) </button>
                     </div>
                 </div>
-                <span class="feedback__again">Супер! Я бы заказала съемку снова!</span>
-                <p class="feedback__text">Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление. 
-                    Организация полёта отличная. Спасибо!</p>
-                <time class="feedback__time" datetime="2019-04-19">19 Апреля, 2019г.</time>
-            </div>
-            <div class="feedback__item hidden">
-                <div class="feedback__user">
-                    <img class="feedback__img" src="./assets/images/feedback-img-3.jpg" alt="feedback-3" />
-                    <div class="feedback__user-info">
-                        <div class="feedback__name">Джим Керри</div>
-                        <div class="feedback__prof"></div>
-                        <img class="feedback__stars" src="./assets/images/rating.png" alt="5 stars" >
-                    </div>
-                </div>
-                <span class="feedback__again">Супер! Я бы заказала съемку снова!</span>
-                <p class="feedback__text">Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!! Кстати закуски были вкусными и сытными))Мы 
-                    с собой ничего не брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно приятно. Короче, Презентстар – проверено. Оценка: пять!</p>
-                <time class="feedback__time" datetime="2019-04-11">11 Апреля, 2019г.</time>
-            </div>
-            <button class="feedback__btn">Показать Все (134) </button>
-        </div>
-    </div>
-</section>  
+        </section>
 
     </main>
 
@@ -347,41 +396,60 @@
       </div> -->
 
 
+
+
     <footer class="footer">
-                <div class="footer__container">
-                    <div class="footer__wrapper">
-                        <div class="footer__top">
-                            <img class="footer__logo logo" src="assets/images/logo.svg">
-                            <div class="footer__social social">
-                                <img class="social__img" src="./assets/images/vk.svg"/>
-                                <img class="social__img" src="./assets/images/facebook.svg"/>
-                                <img class="social__img" src="./assets/images/instragram.svg"/>
-                            </div>
-                        </div>
-                        <div class="footer__bottom">
-                            <div class="footer__botom-inner">
-                            </div>
-                            <div class="footer__copy">
-                                <div class="footer__pay pay">
-                                    <img class="pay__item" src="./assets/images/mc.svg" alt="" />
-                                    <img class="pay__item" src="./assets/images/visa.svg" alt="" />
-                                </div>
-                                <div class="footer__text">
-                                    <a class="footer__phone" href="tel:88007000000">Тех. поддержка: 8(800)700-00-00</a><br>
-                                    <span class="footer__reserved">2018 HELYFLY. All Rights Reserved.</span>
-                                </div>
-                                <select data-da=".footer__botom-inner"  class="footer__lang " name="lang" id="lang">
-                                    <option>RU</option>
-                                    <option>EN</option> 
-                                </select>
-                            </div>
-                        </div>
-                    </div>   
+        <div class="footer__container">
+            <div class="footer__wrapper">
+                <div class="footer__top">
+                    <img class="footer__logo logo" src="assets/images/logo.svg">
+                    <div class="footer__social social">
+                        <img class="social__img" src="./assets/images/vk.svg" />
+                        <img class="social__img" src="./assets/images/facebook.svg" />
+                        <img class="social__img" src="./assets/images/instragram.svg" />
+                    </div>
                 </div>
-            </footer> 
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-            <script src="assets/js/script.js"></script>
+                <div class="footer__bottom">
+                    <div class="footer__botom-inner">
+                    </div>
+                    <div class="footer__copy">
+                        <div class="footer__pay pay">
+                            <img class="pay__item" src="./assets/images/mc.svg" alt="" />
+                            <img class="pay__item" src="./assets/images/visa.svg" alt="" />
+                        </div>
+                        <div class="footer__text">
+                            <a class="footer__phone" href="tel:88007000000">Тех. поддержка: 8(800)700-00-00</a><br>
+                            <span class="footer__reserved">2018 HELYFLY. All Rights Reserved.</span>
+                        </div>
+                        <select data-da=".footer__botom-inner" class="footer__lang " name="lang" id="lang">
+                            <option>RU</option>
+                            <option>EN</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // cssMode: true,
+            slidesPerView: 1,
+            centeredSlides: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
 </body>
 
 </html>
