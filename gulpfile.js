@@ -55,6 +55,8 @@ const path = {
 const jsFiles = [
     srcPath + 'assets/js/lib.js',
     srcPath + 'assets/js/main.js'
+    
+
 ]
 
 

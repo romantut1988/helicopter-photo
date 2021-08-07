@@ -1,13 +1,13 @@
-.header .container, .main .container, .container {
+.header .container, .main .container, .footer__container, .container {
   padding: 0 15px; }
   @media screen and (min-width: 576px) {
-    .header .container, .main .container, .container {
+    .header .container, .main .container, .footer__container, .container {
       padding: 0 35px; } }
   @media screen and (min-width: 768px) {
-    .header .container, .main .container, .container {
+    .header .container, .main .container, .footer__container, .container {
       padding: 0 50px; } }
   @media screen and (min-width: 1280px) {
-    .header .container, .main .container, .container {
+    .header .container, .main .container, .footer__container, .container {
       padding: 0;
       margin: 0 auto;
       width: 1140px; } }
@@ -476,6 +476,58 @@ body {
   width: 1916px;
   height: 500px; }
 
+.map__meet {
+  border: 1px solid #c7c7c7; }
+
+.meet__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  background: #FC9B09;
+  color: #FFFFFF; }
+
+.meet__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #37373F; }
+
+.meet__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #37373F; }
+
+.person-meet__img {
+  height: 65px; }
+
+.person-meet__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #37373F; }
+
+.person-meet__profession {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #37373F; }
+
+.person-meet__btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #5286EC;
+  background: 0 0;
+  border: 0; }
+
 .feedback__title {
   display: flex;
   font-weight: 400;
@@ -535,10 +587,14 @@ body {
   border: 0;
   margin-top: 50px; }
 
+.feedback__user-info {
+  margin-left: 20px; }
+
 .footer {
   margin-top: 87px; }
   .footer__container {
-    padding: 0 15px; }
+    padding: 0 15px;
+    margin: 0 auto; }
   .footer__top {
     display: flex;
     justify-content: space-between;

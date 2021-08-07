@@ -1,0 +1,31 @@
+.meet {
+    &__circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+        border-radius: 50%;
+        height: 65px;
+        width: 65px;
+        background: #FC9B09;
+        color: #FFFFFF;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        color: #37373F;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #37373F;
+    }
+
+}

@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+      <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>Helicopter photo shoot</title>
 </head>
@@ -209,26 +214,32 @@
             </div>
         </section>
 
-        <div class="map">
+        <section class="map">
                 <div class="map__wrapper">
-                    <img src="./assets/images/map.png"></img>
+                        <iframe src="https://yandex.by/map-widget/v1/-/CCUiNHAkWB" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;">
+                        </iframe>
                 </div>
+
             <div class="container">
-                
                 <div class="map__meet meet">
                     <div class="meet__wrapper">
+                        <div class="swiper swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
                                     <div class="meet__circle">1</div>
                                     <div class="meet__text-wrap">                        
                                         <h4 class="meet__title">Где встречаемся?</h4>
                                         <div class="meet__subtitle">Москва</div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide">
                                     <div class="meet__circle">2</div>
                                     <div class="meet__text-wrap">
                                         <h4 class="meet__title">Время съемки</h4>
                                         <div class="meet__subtitle">3 часа</div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide"> 
                                     <div class="meet__circle">3</div>
                                     <div class="meet__text-wrap">
                                         <h4 class="meet__title">Мест осталось:</h4>
@@ -236,6 +247,9 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination-bullet"></div>
                         </div>
                         <div class="meet__info">
                             <div class="meet__info-item">
@@ -261,49 +275,17 @@
                             </div>
                         </div>
                         <div class="meet__person person-meet">
-                            <img class="meet__img-person" src="./assets/images/ellipse.jpg" alt="" />
-                            <div class="meet__inner-person">
-                                <h3 class="meet__title-person">Марина Иванова</h3>
-                                <span class="meet__pofession-person">Фотограф</span>
-                                <button>Показать больше информации о фотографе</button>
+                            <img class="person-meet__img" src="./assets/images/ellipse.png" alt="Marina" />
+                            <div class="person-meet__inner">
+                                <h3 class="person-meet__title">Марина Иванова</h3>
+                                <span class="person-meet__profession">Фотограф</span>
+                                <button class="person-meet__btn">Показать больше информации о фотографе</button>
                             </div>
                         </div>
                     </div>  
                 </div>
             </div>
-        </div> 
-                    <div class="meet__text-wrap">                        
-                            <h4 class="meet__title">Где встречаемся?</h4>
-                            <div class="meet__subtitle">Москва</div>
-                        </div>
-                    </div>
-                    <div class="meet__info-item">
-                        <div class="meet__circle">2</div>
-                        <div class="meet__text-wrap">
-                            <h4 class="meet__title">Время съемки</h4>
-                            <div class="meet__subtitle">3 часа</div>
-                        </div>
-                    </div>
-                    <div class="meet__info-item"> 
-                        <div class="meet__circle">3</div>
-                        <div class="meet__text-wrap">
-                            <h4 class="meet__title">Мест осталось:</h4>
-                            <div class="meet__subtitle">2 места</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="meet__person person-meet">
-                    <img class="person-meet__img" src="./assets/images/ellipse.jpg" alt="Marina" />
-                    <div class="person-meet__inner">
-                        <h3 class="person-meet__title">Марина Иванова</h3>
-                        <span class="person-meet__pofession">Фотограф</span>
-                        <button class="person-meet__btn">Показать больше информации о фотографе</button>
-                    </div>
-                </div>
-            </div>  
-        </div>
-    </div>
-</div>  
+        </section>  
 
         <section class="feedback">
         <div class="container">
@@ -358,8 +340,15 @@
 
     </main>
 
+    <!-- <div class="single-item">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+      </div> -->
+
+
     <footer class="footer">
-                <div class="container">
+                <div class="footer__container">
                     <div class="footer__wrapper">
                         <div class="footer__top">
                             <img class="footer__logo logo" src="assets/images/logo.svg">
@@ -390,8 +379,9 @@
                     </div>   
                 </div>
             </footer> 
-
-
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+            <script src="assets/js/script.js"></script>
 </body>
 
 </html>

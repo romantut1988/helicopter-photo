@@ -2,7 +2,9 @@
     margin-top: 87px;
 
     &__container {
+        @extend %container;
         padding: 0 15px;
+        margin: 0 auto;
     }
 
     &__top {

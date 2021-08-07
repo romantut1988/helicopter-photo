@@ -1,21 +1,21 @@
-.header .container, .main .container, .container {
+.header .container, .main .container, .footer__container, .container {
     padding: 0 15px;
 }
 
 @media screen and (min-width: 576px) {
-    .header .container, .main .container, .container {
+    .header .container, .main .container, .footer__container, .container {
         padding: 0 35px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .header .container, .main .container, .container {
+    .header .container, .main .container, .footer__container, .container {
         padding: 0 50px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .header .container, .main .container, .container {
+    .header .container, .main .container, .footer__container, .container {
         padding: 0;
         margin: 0 auto;
         width: 1140px;
@@ -493,10 +493,6 @@ body {
     display: none;
 }
 
-.about__wrapper {
-    text-align: center;
-}
-
 @media screen and (min-width: 1280px) {
     .about__inner {
         display: -ms-flexbox;
@@ -508,15 +504,33 @@ body {
     }
 }
 
+.about__photografer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
 .about__organizer {
     text-align: start;
     font-size: 16px;
 }
 
 .about__title {
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
     color: #37373F;
     margin: 25px 0 15px 0;
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #37373F;
 }
 
 @media screen and (min-width: 1280px) {
@@ -530,13 +544,12 @@ body {
 }
 
 .about__btn {
+    font-weight: 500;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 24px;
     color: #5286EC;
-    width: 125px;
-    height: 25px;
-    text-align: left;
-    border: 1px solid #5286EC;
+    background: 0;
+    border: 0;
     margin: 20px 0 40px 0;
 }
 
@@ -545,18 +558,18 @@ body {
 }
 
 .photografer__name {
+    font-weight: 500;
+    line-height: 22px;
     font-size: 18px;
     color: #37373F;
     margin-bottom: 10px;
 }
 
-.photografer__btn {
-    border: 0;
-    font-size: 14px;
-}
-
 .photografer__proffession {
+    font-weight: 400;
     font-size: 14px;
+    line-height: 21px;
+    color: #37373F;
 }
 
 @media screen and (min-width: 576px) {
@@ -566,12 +579,14 @@ body {
 }
 
 .photografer__btn {
-    text-align: center;
+    font-weight: 500;
     font-size: 14px;
-    margin-top: 11px;
+    font-size: 14px;
+    line-height: 21px;
     color: #5286EC;
-    width: 290px;
-    height: 37px;
+    background: 0 0;
+    border: 0;
+    max-width: 200px;
 }
 
 .products__wrapper {
@@ -621,6 +636,9 @@ body {
     font-size: 18px;
     padding-bottom: 30px;
     border-bottom: 1px solid;
+    line-height: 26px;
+    color: #37373F;
+    margin-top: 20px;
 }
 
 .products-list__item {
@@ -629,7 +647,8 @@ body {
     display: block;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0 20px;
+    margin-top: 30px;
+    margin-left: 20px;
     -ms-flex-align: center;
     align-items: center;
 }
@@ -647,6 +666,10 @@ body {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #37373F;
 }
 
 .products-list__btn {
@@ -668,6 +691,42 @@ body {
 .map__wrapper {
     width: 1916px;
     height: 500px;
+}
+
+.map__meet {
+    border: 1px solid #c7c7c7;
+}
+
+.meet__circle {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    background: #FC9B09;
+    color: #FFFFFF;
+}
+
+.meet__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #37373F;
+}
+
+.meet__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #37373F;
 }
 
 .feedback__title {
@@ -750,6 +809,7 @@ body {
 
 .footer__container {
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 .footer__top {
