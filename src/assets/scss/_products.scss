@@ -10,7 +10,7 @@
         font-size: 26px;
         line-height: 31px;
         color: #37373f;
-        margin-bottom: 40px;
+        margin-top: 40px;
         font-weight: 400;
     }
 
@@ -18,7 +18,8 @@
         display: block;
         width: 290px;
         height: 100%;
-        border: 1px solid black;
+        border: 1px solid #C7C7C7;
+        margin-top: 40px;
 
         @media screen and (min-width: 576px) {
             width: 506px;
@@ -37,23 +38,22 @@
         text-align: center;
         font-size: 18px;
         padding-bottom: 30px;
-        border-bottom:1px solid;
+        border-bottom: 0.5px solid #C7C7C7;
         line-height: 26px;
         color: #37373F;
         margin-top: 20px;
     }
 
     &-list__item {
-        padding-left: 10px;
-        border-bottom: 1px solid;
+        padding-left: 27px;
+        border-bottom: 0.5px solid #C7C7C7;
         display: block;
         justify-content: space-between;
-        margin-top: 30px;
-        margin-left: 20px;
+        margin-top: 10px;
         align-items: center;
+        min-height: 220px;
 
         @media screen and (min-width: 576px) {
-            width: 506px;
             display: flex;
         }
     }
@@ -67,19 +67,44 @@
         color: #37373F;        
     }
 
+    &-list__time {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #37373F;
+        margin-bottom: 10px;
+    }
+
+    &-list__coast {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #37373F;
+        margin-bottom: 10px;
+    }
+
+    &-list__places {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #37373F;
+        margin-bottom: 20px;
+    }
+
     &-list__btn {
         height: 50px;
         width: 129px;
         border-radius: 3px;
-        color:#FC9B09; 
-        margin: 20px 0px 30px 0px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
+        border: 2px solid #FC9B09;
+        box-sizing: border-box;
+        color: #FC9B09;
+        background-color: #fff;
 }
 
     &-list__rating {
+        display: flex;
+        align-items: center;
+        min-height: 100px;
         padding-left: 22px;
     }
 }
