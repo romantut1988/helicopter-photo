@@ -14,6 +14,11 @@
         border-bottom: 1px solid #b3b3b3;
     }
 
+    &__logo {
+        width: 84px;
+        height: 15px;
+    }
+
     &__bottom {
         // display: flex;
         // flex-direction: column;
@@ -26,10 +31,7 @@
     }
 
     &__copy {
-        margin-top: 25px;
         text-align: center;
-        display: flex;
-        justify-content: space-between;
     }
 
     &__phone {
@@ -46,6 +48,24 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
+        margin-top: 10px;
         color: #B3B3B3;
+    }
+
+    &__pay {
+        display: flex;
+        align-items: center;
+    }
+
+    &__lang {
+        margin-left: 166px;
+    }
+
+    &__text {
+        margin-top: 25px;
+    }
+
+    .pay__items {
+        margin-left: 12px;
     }
 }

@@ -34,7 +34,7 @@
     &__person {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     &__wrapper {
@@ -45,14 +45,14 @@
         padding-bottom: 20px;
     }
 
-    .swiper-container{
+    .swiper-container {
         max-width: 400px;
         width: 100%;
         min-height: 200px;
         padding-bottom: 15px;
     }
 
-    .swiper-slide{
+    .swiper-slide {
         // max-width: 400px;
         // width: 100%;
         // min-height: 380px;
@@ -62,21 +62,27 @@
         height: 100%;
     }
 
-    .swiper-button-next{
+    .swiper-button-next {
         background-image: url(../images/arrow-swipper.svg);
         background-repeat: no-repeat;
         background-size: contain;
         width: 19px;
-        height: 24px;
+        height: 10px;
+        top: 55px;
+        right: 13px;
+        left: auto;
     }
 
-    .swiper-button-prev{
+    .swiper-button-prev {
         background-image: url(../images/arrow-swipper.svg);
         background-repeat: no-repeat;
         background-size: contain;
         transform: rotate(180deg);
         width: 19px;
-        height: 24px;
+        height: 10px;
+        top: 55px;
+        right: auto;
+        left: 13px;
         -webkit-transform: rotate(180deg);
         -moz-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -87,10 +93,15 @@
         content: '';
     }
     
-    .swiper-pagination-bullet{
+    .swiper-pagination-bullet {
         background: #FC9B09;
         width: 10px;
         height: 10px;
     }
 
+    .swiper-pagination {
+        bottom: 30px;
+        left: 0;
+        width: 100%;
+    }
 }
