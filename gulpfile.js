@@ -28,7 +28,7 @@ const path = {
     src: {
         html:   srcPath + "*.html",
         js:     srcPath + "assets/js/*.js",
-        css:    srcPath + "assets/scss/**/*.scss",
+        css:    srcPath + "assets/scss/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
@@ -42,10 +42,10 @@ const path = {
     },
     // За этими файлами мы будем следить. При изменении этих файлов бдет перезагружаться браузер
     watch: {
-        html:   srcPath + "**/*.html",
-        js:     srcPath + "assets/js/**/*.js",
-        css:    srcPath + "assets/scss/**/*.scss",
-        images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
+        html:   srcPath + "*.html",
+        js:     srcPath + "assets/js/*.js",
+        css:    srcPath + "assets/scss/*.scss",
+        images: srcPath + "assets/images/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
     clean: "./" + distPath

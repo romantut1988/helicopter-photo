@@ -563,7 +563,7 @@ body {
 }
 
 .photografer__img {
-    margin: 65px 0 25px 0;
+    margin: 54px 0 23px 0;
 }
 
 .photografer__name {
@@ -644,7 +644,7 @@ body {
 .products-list__day {
     text-align: center;
     font-size: 18px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     border-bottom: 0.5px solid #C7C7C7;
     line-height: 26px;
     color: #37373F;
@@ -652,7 +652,7 @@ body {
 }
 
 .products-list__item {
-    padding-left: 27px;
+    padding-left: 20px;
     border-bottom: 0.5px solid #C7C7C7;
     display: block;
     -ms-flex-pack: justify;
@@ -772,7 +772,7 @@ body {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .meet__wrapper {
@@ -805,7 +805,10 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 19px;
-    height: 24px;
+    height: 10px;
+    top: 55px;
+    right: 13px;
+    left: auto;
 }
 
 .meet .swiper-button-prev {
@@ -814,7 +817,10 @@ body {
     background-size: contain;
     transform: rotate(180deg);
     width: 19px;
-    height: 24px;
+    height: 10px;
+    top: 55px;
+    right: auto;
+    left: 13px;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -829,6 +835,12 @@ body {
     background: #FC9B09;
     width: 10px;
     height: 10px;
+}
+
+.meet .swiper-pagination {
+    bottom: 30px;
+    left: 0;
+    width: 100%;
 }
 
 .person-meet__img {
@@ -864,6 +876,10 @@ body {
     text-align: left;
 }
 
+.feedback__wrapper {
+    padding-top: 40px;
+}
+
 .feedback__title {
     display: -ms-flexbox;
     display: flex;
@@ -873,6 +889,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     color: #37373F;
+    margin-bottom: 50px;
 }
 
 .feedback__img {
@@ -884,7 +901,13 @@ body {
 }
 
 .feedback__item {
+    margin-top: 55px;
+    padding-bottom: 45px;
     border-bottom: 1px solid #c7c7c7;
+}
+
+.feedback__item-hidden {
+    display: none;
 }
 
 .feedback__user {
@@ -892,6 +915,7 @@ body {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: 26px;
 }
 
 .feedback__name {
@@ -905,6 +929,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 7px;
 }
 
 .feedback__again {
@@ -918,6 +943,8 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    margin-top: 14px;
+    margin-bottom: 40px;
     color: #37373F;
 }
 
@@ -935,7 +962,8 @@ body {
     color: #5286EC;
     background: 0 0;
     border: 0;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: 60px;
 }
 
 .feedback__user-info {
@@ -960,6 +988,11 @@ body {
     border-bottom: 1px solid #b3b3b3;
 }
 
+.footer__logo {
+    width: 84px;
+    height: 15px;
+}
+
 .footer__botom-inner {
     display: -ms-flexbox;
     display: flex;
@@ -969,12 +1002,7 @@ body {
 }
 
 .footer__copy {
-    margin-top: 25px;
     text-align: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 .footer__phone {
@@ -991,5 +1019,25 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    margin-top: 10px;
     color: #B3B3B3;
+}
+
+.footer__pay {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer__lang {
+    margin-left: 166px;
+}
+
+.footer__text {
+    margin-top: 25px;
+}
+
+.footer .pay__items {
+    margin-left: 12px;
 }
